@@ -38,6 +38,11 @@ intervals[i].length == 2
  */
 public class 合并区间 {
 
+    /**
+     * 自己编写
+     * @param intervals
+     * @return
+     */
     public static int[][] merge(int[][] intervals) {
         if (intervals.length == 0) {
             return new int[0][0];
@@ -72,6 +77,12 @@ public class 合并区间 {
         return merged.toArray(new int[merged.size()][]);
     }
 
+
+    /**
+     * 力扣官网题解
+     * @param intervals
+     * @return
+     */
     public int[][] mergeLK(int[][] intervals) {
         if (intervals.length == 0) {
             return new int[0][2];
